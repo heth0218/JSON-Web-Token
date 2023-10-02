@@ -8,7 +8,7 @@ const key=require('./config/key')
 
 mongoose.connect("mongodb://localhost:27017/Heth")
 mongoose.connection.on('connected',()=>{
-    console.log('successfully connected to db')
+    console.log('successfully connected to the database')
 })
 
 
@@ -73,8 +73,8 @@ app.get('/',test,async (req,res)=>{
     res.send(user);
 })
 
-app.listen(3000,()=>{
-    console.log('listening to port 3000');
+app.listen(3001,()=>{
+    console.log('listening to port 3001');
 })
 
 
